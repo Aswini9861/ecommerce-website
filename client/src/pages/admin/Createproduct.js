@@ -5,7 +5,6 @@ import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import { Select, Space } from "antd";
 import { useNavigate } from "react-router-dom";
-import '../styles/CategoryProductStyles.css'
 
 let { Option } = Select;
 
