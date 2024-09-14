@@ -13,7 +13,12 @@ import productrouter from './routes/productroutes.js'
 
 
 const app =express()
-app.use(cors())
+app.use(cors({
+    origin: 'https://deploy-mern-1whq.vercel.app', 
+    methods: ["GET", "POST", "PATCH", "DELETE", "PUT"],
+    credentials: true
+}));
+
 
 ConnectDB()
 app.use(morgan('dev'))
